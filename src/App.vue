@@ -1,11 +1,17 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { RouterLink } from 'vue-router'
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
-</template>
+  <header style="text-align: center; margin-top: 20px">
+    <img src="/honda-civic-si-3.jpg" alt="Honda Civic Si" width="200" />
 
-<style scoped></style>
+    <h1 style="color: mediumseagreen">¡Lo hiciste!</h1>
+    <p>Welcome to your Vue 3 + TypeScript app</p>
+
+    <nav>
+      <RouterLink to="/">Home</RouterLink>
+      <RouterLink to="/about">About</RouterLink>
+    </nav>
+  </header>
+</template>
